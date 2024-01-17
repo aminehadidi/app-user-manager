@@ -4,7 +4,7 @@
     "env": "local",
     "displayVersion": true,
     "baseUrl": "",
-    "userManagementUrl": "http://localhost:8080/api/user-management/users"   
+    "userManagementUrl": "http://localhost:8080/api/user-management/users"
     
   }
 }

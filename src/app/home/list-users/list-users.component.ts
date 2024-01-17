@@ -17,7 +17,7 @@ import { openDeleteUserDialog } from '../dialogs/delete-user/delete-user.compone
   templateUrl: './list-users.component.html',
   styleUrl: './list-users.component.scss'
 })
-export class ListUsersComponent implements AfterViewInit {
+export default class ListUsersComponent implements AfterViewInit {
 
   
   listUsers: UserElement[];
