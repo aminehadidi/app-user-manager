@@ -1,0 +1,76 @@
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .content {
+    padding: 10px 30px 10px 30px;
+  }
+  
+   
+  img{
+    width: 20px;
+    height: 20px;
+    cursor:pointer;
+  }
+  
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 700px) and (max-width: 968px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 90%;
+    }   
+  }
+  
+  @media (max-width: 999px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
+  .form-container {
+    width: max-content;
+    border-radius: 8px;
+    border: 1px grey solid;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin: 2rem auto;
+  }
+  .button-add{background-color:#20d074;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position:absolute;
+    right: 30px;
+  }
+  mat-form-field{
+    width: 50%;
+  }
+ 

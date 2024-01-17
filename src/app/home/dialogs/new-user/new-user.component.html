@@ -1,0 +1,31 @@
+<div class="edit-user-form">
+
+    <h2 mat-dialog-title>Création d'utilisateur</h2>
+
+    <mat-dialog-content [formGroup]="form">
+
+        <mat-form-field>
+            <mat-label>Prénom</mat-label>
+            <input matInput placeholder="Prénom" formControlName="firstName">
+            <mat-error>{{ getFormControlErrorText(firstNameCtrl) }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Nom" formControlName="lastName">
+            <mat-error>{{ getFormControlErrorText(lastNameCtrl) }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error>{{ getFormControlErrorText(emailCtrl) }} </mat-error>
+        </mat-form-field>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button mat-raised-button (click)="close()" class="close">Annuler</button>
+        <button mat-raised-button color="primary" (click)="form.valid?saveAddUser():''" class="save">Créer</button>
+    </mat-dialog-actions>
+
+</div>
