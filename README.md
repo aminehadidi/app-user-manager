@@ -28,8 +28,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## config url microservice backend
 
-Mettre à jour l'url dans /src/assets/config/config.json  ; "userManagementUrl": "http://localhost:8080/api/user-management/users" 
+- Mettre à jour l'url dans /src/assets/config/config.json  ; "userManagementUrl": "http://localhost:8080/api/user-management/users" 
 
-Mettre à jour l'url du microservice dans  /proxy.conf.json; "target": "http://localhost:8080" 
+- Mettre à jour l'url du microservice dans  /proxy.conf.json; "target": "http://localhost:8080" 
+
+## après avoir importé le projet depuis git
+- Lancer la ligne de commande npm i puis npm fund
+- Après avoir mis à en marche de l'application backend vous pouvez lancer ng serve et accèder à l'application 
 
  
